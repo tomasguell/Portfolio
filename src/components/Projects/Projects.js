@@ -8,25 +8,33 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
-
+import valeo from "../../Assets/valeo.png"
+import vic from "../../Assets/LogoSiteVic.png"
+import logos from "../../Assets/reduced-manual-error-768x437.png"
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Mi Historia <strong className="purple">Laboral </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Aca tienes un paso por mi experiencia laboral.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={vic}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="Sub Gerente General"
+              startDate = "03/2018"
+              endDate = 'Actualidad'
+              empresa = 'Vic'
+              description="Dirección de Planta Industrialy servicios (compras, Finanzas,
+                Calidad, Ingeniería) , Generación nuevos negocios, Terminales Automtorices
+                (OES) y mercados de reposición local o de exportación (IAM).Implementación
+                Nuevos proyectos,"
               ghLink="https://github.com/soumyajit4419/Chatify"
               demoLink="https://chatify-49.web.app/"
             />
@@ -34,10 +42,14 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={logos}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Socio Gerente"
+              startDate = "03/2018"
+              endDate = 'Actualidad'
+              empresa = 'Logos'
+              description="Estudios Logísticos, Talleres Kaizen, Proyectos de
+              Certificación de Productos y sistema de Calidad, Talleres SMED, Estudios VSM"
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
             />
@@ -45,10 +57,16 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={valeo}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="Gerente Comercial"
+              startDate = "11/2007"
+              endDate = '02/2018'
+              empresa = 'Valeo Iluminación'
+              description="Portfolio de negocios Terminales Automtorices (OEM/OES) y
+              mercados de reposición local o de exportación (IAM).Nuevos proyectos,
+              adjudicación yl desarrollo de nuevos productos, business case, seguimiento de
+              indicadores. Actualización niveles económicos y negociación con cada cliente."
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"              
             />
@@ -56,10 +74,18 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={valeo}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              title="Director de Proyectos/Jefe de Proyecto"
+              startDate = "06/1999"
+              endDate = '11/2007'
+              empresa = 'Valeo Iluminación'
+              description="Desarrollo del ciclo de vida del producto.:Viabilidad del
+              negocio, fijación de precios objetivos, compras herramentales y componentes,
+              desarrollo de la Ingeniería del producto
+              -Responsable de la cartera de proyectos desde la formación de equipos, recursos
+              presupuestarios, interfaz con clientes, proveedores Casa Matriz y las otras áreas
+              de la empresa."
               ghLink="https://github.com/soumyajit4419/Plant_AI"
               demoLink="https://plant49-ai.herokuapp.com/"
             />
@@ -67,26 +93,23 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={valeo}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="Jefe de Calidad de Planta"
+              startDate = "06/1999"
+              endDate = '11/2007'
+              empresa = 'Valeo Iluminación'
+              description="Gestión de auditoría de producto/proceso, implementación del
+              control estadístico de proceso, gestión de Autocalidad de operadores y
+              seguimiento del plan de control de los productos en la producción. A cargo del
+              Laboratorio físico, Lab. metrología, Lab óptico y planta de auditores de línea e
+              Ingeniero de calidad residente en el cliente."
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+
         </Row>
       </Container>
     </Container>
