@@ -33,7 +33,7 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
-        <Row>
+        <Row style={{marginTop: "8rem"}}>
           <Col md={12} className="home-about-social">
             <h1>ENCONTRAME EN</h1>
             <p>

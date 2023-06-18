@@ -6,9 +6,9 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Ingeniero Electromecanico",
-          "Tecnico en Mecanica",
-          "Project Manager",
+          "Técnico Mecánico",
+          "Ingeniero Mecánico Electricista",
+          "PMP Project Manager",
           "Profesional Dinámico",
         ],
         autoStart: true,
